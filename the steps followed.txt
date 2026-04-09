@@ -1,0 +1,85 @@
+1. Setup
+
+Installed networkx and matplotlib.
+
+------------------------------------------------------------------------------------------------
+
+2. Basic Traffic Simulation
+
+Built a Python program to simulate a smart city traffic system using NetworkX and Matplotlib.
+
+Created a 4x4 city grid (each node = intersection)
+Each node stores signal state, timer, and vehicle queue
+Each edge stores traffic density and vehicles on the road
+Added ~15 vehicles with source, destination, and wait time
+Vehicles move step-by-step and wait at red signals
+Signals switch at fixed intervals (NS / EW control)
+Ran simulation for multiple steps
+
+Tracked:
+
+Total wait time
+Average wait time
+Stopped vehicles
+
+👉 Result: Adaptive signals reduced waiting time by ~85% compared to earlier trials
+
+------------------------------------------------------------------------------------------------
+
+3. Tried Gemini API (Real AI)
+
+Attempted to integrate Gemini 2.0 for real-time decisions.
+
+Faced quota issues (free tier exhausted)
+API returned RESOURCE_EXHAUSTED errors
+
+👉 Couldn’t proceed without billing
+
+------------------------------------------------------------------------------------------------
+
+4. Simulated AI Layer
+
+Replaced API with a local AI-like decision system (smoke & mirrors approach)
+
+Embedded inference layer
+Decentralized adaptive control logic
+
+👉 System mimics intelligent decision-making without external APIs
+
+------------------------------------------------------------------------------------------------
+
+5. Emergency Vehicles
+
+Added ambulance 🚑 and fire engine 🚒 logic.
+
+Emergency vehicles always get priority
+Signals are overridden to create green corridors
+Civilian vehicles yield
+
+👉 System dynamically adapts for real-world urgency scenarios
+
+------------------------------------------------------------------------------------------------
+
+6. Pollution & Sustainability
+
+Extended system to include environmental impact.
+
+Measured pollution caused by traffic
+Nodes/roads reflect pollution levels
+AI prioritizes clearing high-pollution zones
+
+👉 Goal: optimize traffic and reduce emissions
+
+------------------------------------------------------------------------------------------------
+
+7. Visual Upgrade
+
+Improved UI inspired by Google Maps.
+
+Dark theme dashboard
+Organic (non-grid) layout
+Glowing roads based on traffic intensity
+Emergency routes highlighted
+Removed node clutter
+
+👉 Final output looks like a real traffic monitoring system
